@@ -1,0 +1,148 @@
+HTML code
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="/Demo_logo-removebg-preview.png" alt="logo" class="logo" height="150">
+    <div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#Our staff">Our Staff</a></li>
+                <li><a href="#News">News</a></li>
+                <li><a href="#gallary">Gallary</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="corner">
+    <a href="#login" class="lr">Login</a>
+    <a href="#register" class="lr">Registar</a><br><br>
+    <button id="en" class="en">ENROLL NOW</button>
+    </div>
+
+    <div class="main">
+        <h1 class="main_head">Learning Centre for <br>Your Kids</h1>
+        <p>Another free template by XYZ. For far away,<br>behind the word mountains, for from the countries <br>Vokalia and Consansatia, there live the blind texts.</p>
+        <button id="en" class="en">EXPLORE NOW</button>
+    </div>
+
+    <div class="footer">
+        <section class="pro">
+            <img src="/learnpng-removebg-preview.png" alt="learn" height="50" class="png">
+            <h4>Learn</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, voluptas odit, officia rerum quas ab recusandae eveniet quisquam possimus corrupti cumque. Tenetur repellat neque, quis recusandae placeat esse accusantium sed.</p>
+        </section>
+        <section class="pro">
+            <img src="/playpng-removebg-preview.png" alt="play" height="50" class="png">
+            <h4>Play</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, voluptas odit, officia rerum quas ab recusandae eveniet quisquam possimus corrupti cumque. Tenetur repellat neque, quis recusandae placeat esse accusantium sed.</p>
+        </section>
+        <section class="pro">
+            <img src="/meal-icon-3-removebg-preview.png" alt="meal" height="50" class="png">
+            <h4>Meal</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque, voluptas odit, officia rerum quas ab recusandae eveniet quisquam possimus corrupti cumque. Tenetur repellat neque, quis recusandae placeat esse accusantium sed.</p>
+        </section>
+    </div>
+    
+</body>
+</html>
+
+
+
+css code
+
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/kidstudy.jpeg);
+    filter: brightness(30%);
+    background-size: cover;
+    width: 100%;
+    z-index: -2;
+}
+nav{
+    display: flex;
+    justify-content: center;
+
+}
+nav ul{
+    flex-direction: row;
+    display: flex;
+    margin: 30px;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.corner{
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    align-items: center;
+}
+.lr{
+    margin-right: 50px;
+    color: aquamarine;
+}
+.main{
+    font-size: 20px;
+    position:absolute ;
+    left: 50px;
+}
+.main_head{
+    font-size: 50px;
+}
+.en{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    background-color: rgb(16, 186, 129);
+    border: none;
+    cursor: pointer;
+}
+.footer{
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    left: 150px;
+}
+.pro{
+    width: 400px;
+    margin-right: 30px;
+    text-align: center; 
+}
+.png{
+    filter: brightness(0%);
+}
+h4{
+    color: aquamarine;
+}
+.logo{
+    position: absolute;
+    left: 40px;
+    filter: brightness(3);
+}
